@@ -1,0 +1,111 @@
+<!-- Beta Vendor -->
+
+<xml>
+
+<start>
+<startCondition>HAVE_ITEM 59891 1</startCondition>
+<startGoto>OPEN_SHOP_HAS_RING</startGoto>
+</start>
+
+<start>
+<startCondition>HAVE_ITEM 59892 1</startCondition>
+<startGoto>OPEN_SHOP_HAS_RING</startGoto>
+</start>
+
+<start>
+<startCondition>HAVE_ITEM 59893 1</startCondition>
+<startGoto>OPEN_SHOP_HAS_RING</startGoto>
+</start>
+
+<start>
+<startCondition>HAVE_ITEM 59894 1</startCondition>
+<startGoto>OPEN_SHOP_HAS_RING</startGoto>
+</start>
+
+<start>
+<startCondition>HAVE_ITEM 59895 1</startCondition>
+<startGoto>OPEN_SHOP_MAX_RING</startGoto>
+</start>
+
+
+<line>
+<lineTag>OPEN_SHOP_NO_RING</lineTag>
+<lineText>Greetings, [name].\n\nSay, have you come across any [FFFF33]Enchanted Pearls[-] in your travels? You can find them at fishing spots in [FFFF33]Shalemont[-] and [FFFF33]Stonevale[-].\n\nI've been working on a technique for crafting them into rings, you see. I'd be happy to make you one if you find the pearls for me.</lineText>
+<choice>
+<choiceOptions>[TVG]</choiceOptions>
+<choiceText>Buy rings.</choiceText>
+<choiceAction>TOKENVENDOR 128</choiceAction>
+<choiceGoto>OPEN_SHOP</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>Enchanted Pearls?</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>ENCHANTED_PEARLS</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Not right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_SHOP_HAS_RING</lineTag>
+<lineText>Greetings, [name]. How's that ring working out for you?\n\nIf you bring me more [FFFF33]Enchanted Pearls[-], I'd be able to do some more work on it. Really make it shine. What do you say?</lineText>
+<choice>
+<choiceOptions>[TVG]</choiceOptions>
+<choiceText>Buy rings.</choiceText>
+<choiceAction>TOKENVENDOR 128</choiceAction>
+<choiceGoto>OPEN_SHOP</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>Enchanted Pearls?</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>ENCHANTED_PEARLS</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Not right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>OPEN_SHOP_MAX_RING</lineTag>
+<lineText>Greetings, [name]. How's that ring working out for you?\n\nThat piece is some of my finest work, so be sure and take care of it.</lineText>
+<choice>
+<choiceOptions>[TVG]</choiceOptions>
+<choiceText>Buy rings.</choiceText>
+<choiceAction>TOKENVENDOR 128</choiceAction>
+<choiceGoto>OPEN_SHOP</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>Enchanted Pearls?</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>ENCHANTED_PEARLS</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Not right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>ENCHANTED_PEARLS</lineTag>
+<lineText>Yes. Rare pearls that are imbued with magic. They can only be found in [FFFF33]Marsh Clams[-], caught from the rivers of [FFFF33]Shalemont[-] and [FFFF33]Stonevale[-].\n\nYou can tell them apart from their mundane counterparts by their bright blue colour.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Interesting.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>OPEN_SHOP_NO_RING</choiceGoto>
+</choice>
+</line>
+
+</xml>

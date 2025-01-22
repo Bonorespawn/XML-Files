@@ -1,0 +1,50 @@
+<xml>
+<start>
+<startCondition>LEVEL_FISH_LESS_THAN 200</startCondition>
+<startGoto>OPEN_LOWLEVEL</startGoto>
+</start>
+
+
+
+<!--  OPENING SECTION  -->
+<line>
+<lineTag>OPEN_LOWLEVEL</lineTag>
+<lineText>Does not appear you are ready to use my wares just yet, come back to me when you gain more experience fishing waters.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag></lineTag>
+<lineText> I have seen you running around with your fishing rod, aimed to catch the fish and loot hidden beneath these waters. You will need something more than just a rod and some rings to fish here. Chum negates the effects of stillness that these waters afflict you with. I also offer a path to gain and upgrade a fishing amulet. </lineText>
+<choice>
+<choiceOptions>[S]</choiceOptions>
+<choiceText>Show me your wares.</choiceText>
+<choiceAction>SHOP 15101</choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<!--  SHOP SECTION  -->
+<line>
+<lineTag>SHOP_LIST</lineTag>
+<lineText>You might find what you are looking for here.</lineText>
+<choice>
+<choiceOptions>[S]</choiceOptions>
+<choiceText>Chum.</choiceText>
+<choiceAction>SHOP 15057</choiceAction>
+<choiceGoto>SHOP_LIST</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[S]</choiceOptions>
+<choiceText>Amulets.</choiceText>
+<choiceAction>SHOP 15055</choiceAction> 
+<choiceGoto>SHOP_LIST</choiceGoto>
+</choice>
+</line>
+</xml>
+

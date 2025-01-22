@@ -1,0 +1,52 @@
+<!-- Fishing NPC for Carrowmore -->
+
+<xml>
+
+<line>
+<lineTag>OPEN</lineTag>
+<lineText>What would you like to do?</lineText>
+<choice>
+<choiceOptions>[S]</choiceOptions>
+<choiceText>Cooking.</choiceText>
+<choiceAction>TOKENVENDOR 47</choiceAction>
+<choiceGoto>AFTER</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Nothing.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>AFTER</lineTag>
+<lineText>Goodybe.</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<!--
+<line>
+<lineTag></lineTag>
+<lineText></lineText>
+<choice>
+<choiceOptions></choiceOptions>
+<choiceText></choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto></choiceGoto>
+</choice>
+<choice>
+<choiceOptions></choiceOptions>
+<choiceText></choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto></choiceGoto>
+</choice>
+</line>
+-->
+
+</xml>

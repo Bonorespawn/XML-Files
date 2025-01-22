@@ -1,0 +1,135 @@
+<!-- cv_archive_warden_placeholder_text -->
+
+<xml>
+
+<start>
+<startCondition>STAGE_AVAILABLE 2594 0</startCondition>
+<startGoto>START_QUEST</startGoto>
+</start>
+
+<line>
+<lineTag>OPEN</lineTag>
+<lineText>Welcome, welcome! You look like a fine angler, allow me to welcome you to Farcrag Castle!</lineText>
+<choice>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>What can I fish in the castle?</choiceText>
+<choiceAction></choiceAction>
+<choiceGoto>WHATFISH</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[S]</choiceOptions>
+<choiceText>Upgrade Shop</choiceText>
+<choiceAction></choiceAction>
+<choiceGoto>SHOP</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[S]</choiceOptions>
+<choiceText>Cooking Shop</choiceText>
+<choiceAction>SHOP 15109</choiceAction>
+<choiceGoto>OPEN</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye</choiceText>
+<choiceAction></choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>WHATFISH</lineTag>
+<lineText>The fish in the fountain are from Lord MacLir's very own prized stock! You should be honoured hero, to be allowed access to such a fine selection of fish!</lineText>
+<choice>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>Back</choiceText>
+<choiceAction></choiceAction>
+<choiceGoto>OPEN</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>SHOP</lineTag>
+<lineText>Upgrade Shop Text</lineText>
+<choice>
+<choiceOptions>[TVG]</choiceOptions>
+<choiceText>Upgrade Fishing Power Rings</choiceText>
+<choiceAction>TOKENVENDOR 658</choiceAction>
+<choiceGoto>AFTER</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[TVG]</choiceOptions>
+<choiceText>Upgrade Fishing Concentration Rings</choiceText>
+<choiceAction>TOKENVENDOR 657</choiceAction>
+<choiceGoto>AFTER</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[TVG]</choiceOptions>
+<choiceText>Upgrade Fishing Scholar Rings</choiceText>
+<choiceAction>TOKENVENDOR 653</choiceAction>
+<choiceGoto>AFTER</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[TVG]</choiceOptions>
+<choiceText>Upgrade Fishing Treasure Rings</choiceText>
+<choiceAction>TOKENVENDOR 654</choiceAction>
+<choiceGoto>AFTER</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[TVG]</choiceOptions>
+<choiceText>Upgrade Fishing Critical Strike Rings</choiceText>
+<choiceAction>TOKENVENDOR 655</choiceAction>
+<choiceGoto>AFTER</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[TVG]</choiceOptions>
+<choiceText>Upgrade Fishing Critical Skill Rings</choiceText>
+<choiceAction>TOKENVENDOR 656</choiceAction>
+<choiceGoto>AFTER</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[I]</choiceOptions>
+<choiceText>Back</choiceText>
+<choiceAction></choiceAction>
+<choiceGoto>OPEN</choiceGoto>
+</choice>
+</line>
+
+
+
+<line>
+<lineTag>START_QUEST</lineTag>
+<lineText>So, you're interested in Fishing are you? \n\nWell why dont you speak with my friend the [00CC00]Old Seafarer.[-] I heard that he has started to teach Fishing novices such as yourself. \n\n[FFFF33]You can find him in Lir's Reach near to the Smuggler's Rest Tavern, welcoming new visitors to the area.[-]</lineText>
+
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Thank you.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<line>
+<lineTag>AFTER</lineTag>
+<lineText>Goodbye, [class]!</lineText>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Goodbye.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+
+<!--
+<line>
+<lineTag></lineTag>
+<lineText></lineText>
+<choice>
+<choiceOptions></choiceOptions>
+<choiceText></choiceText>
+<choiceAction></choiceAction>
+<choiceGoto></choiceGoto>
+</choice>
+</line>
+-->
+
+</xml>

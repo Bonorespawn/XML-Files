@@ -1,0 +1,19 @@
+<xml>
+<line>
+<lineTag>OPEN</lineTag>
+<lineText>Say, [player_name] you look like you're searching for some high quality ingredients. Look no further I offer an array of high-quality ingredients necessary for your culinary endeavors.</lineText>
+<choice>
+<choiceOptions>[S]</choiceOptions>
+<choiceText>What ingredients do you sell?</choiceText>
+<choiceAction>SHOP 15063</choiceAction>
+<choiceGoto>OPEN</choiceGoto>
+</choice>
+<choice>
+<choiceOptions>[X]</choiceOptions>
+<choiceText>Not right now.</choiceText>
+<choiceAction> </choiceAction>
+<choiceGoto>-1</choiceGoto>
+</choice>
+</line>
+</xml>
+
